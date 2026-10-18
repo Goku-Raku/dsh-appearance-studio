@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "retrievedOn": "2026-10-18",
+  "runtime": "Offline palette and CSS backgrounds embedded in client.js; no downloads.",
+  "themes": [
+    {
+      "id": "catppuccin",
+      "name": "Catppuccin",
+      "license": "MIT",
+      "licenseFile": "licenses/Catppuccin-MIT.txt",
+      "homepage": "https://github.com/catppuccin/palette",
+      "paletteSource": "https://raw.githubusercontent.com/catppuccin/palette/main/palette.json",
+      "paletteVersion": "1.8.0",
+      "sha256": "4bc114bb6b3c9a9c9e156564aa84625aef32c5da514d9dd431cf1fcad433a05f",
+      "light": "Latte",
+      "dark": "Mocha",
+      "wallpaper": "catppuccin-clouds"
+    },
+    {
+      "id": "nord",
+      "name": "Nord",
+      "license": "MIT",
+      "licenseFile": "licenses/Nord-MIT.txt",
+      "homepage": "https://github.com/nordtheme/nord",
+      "paletteSource": "https://raw.githubusercontent.com/nordtheme/nord/develop/src/nord.css",
+      "sha256": "b931ac3732582b2066b2d6cadec02d9820ba7081e6e3e404c31cb62d9315a962",
+      "light": "Plugin mapping of Snow Storm",
+      "dark": "Plugin mapping of Polar Night",
+      "wallpaper": "nord-horizon"
+    },
+    {
+      "id": "rose-pine",
+      "name": "Rosé Pine",
+      "license": "MIT",
+      "licenseFile": "licenses/Rose-Pine-MIT.txt",
+      "homepage": "https://github.com/rose-pine/rose-pine-theme",
+      "paletteSource": "https://raw.githubusercontent.com/rose-pine/palette/main/palette.json",
+      "sha256": "8b71546357c65ee23715e77f144d914e5f415f44f3ef3b0179bbe1f17d69211d",
+      "light": "Dawn",
+      "dark": "Main",
+      "wallpaper": "rose-pine-glow"
+    }
+  ],
+  "backgrounds": {
+    "author": "Appearance Studio contributors",
+    "license": "MIT",
+    "licenseFile": "licenses/Appearance-Studio-Backgrounds-MIT.txt",
+    "implementation": "Original static CSS gradient compositions using the credited palettes, one light/dark pair per theme with separate outer-frame and conversation materials. Not official upstream wallpapers."
+  }
+}

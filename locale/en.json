@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Appearance Studio",
+    "description": "Adds an Appearance Studio page to Settings for live appearance customization: accent color, surface palettes, wallpaper, chat bubble colors, corner radius and shadows, interface and code fonts, font sizes, and text contrast, applied through published theme tokens."
+  }
+}

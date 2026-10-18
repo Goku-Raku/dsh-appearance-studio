@@ -1,0 +1,86 @@
+{
+  "name": "dsh-appearance-studio",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Appearance plugin for official DeepSeek Harness Desktop: themes, wallpaper, frosted materials and typography. DSH 皮肤与外观主题。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README*.md",
+    "LICENSE",
+    "DISCLAIMER.md",
+    "SECURITY.md",
+    "CHANGELOG.md",
+    "THIRD-PARTY-NOTICES.md",
+    "theme-sources.json",
+    "licenses/*.txt",
+    "assets/*",
+    "docs/VALIDATION.md",
+    "docs/screenshots/*",
+    "scripts/*.mjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Goku-Raku",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Goku-Raku/dsh-appearance-studio.git"
+  },
+  "homepage": "https://github.com/Goku-Raku/dsh-appearance-studio#readme",
+  "bugs": {
+    "url": "https://github.com/Goku-Raku/dsh-appearance-studio/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "deepseek harness appearance",
+    "dsh",
+    "dsh-plugin",
+    "desktop",
+    "desktop-theme",
+    "appearance",
+    "skin",
+    "wallpaper",
+    "frosted-glass",
+    "DSH皮肤",
+    "DSH外观",
+    "DeepSeek Harness主题"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": "0.2.1-rc.2"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": "0.2.1-rc.2"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "sync:wallpaper": "node scripts/sync-wallpaper.mjs"
+  }
+}

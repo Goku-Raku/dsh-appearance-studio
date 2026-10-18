@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const image = fs.readFileSync(path.join(root, 'assets/bonfire-chu2-manga.jpg'));
+const file = path.join(root, 'client.js');
+const source = fs.readFileSync(file, 'utf8');
+const pattern = /\/\/ BEGIN BUNDLED WALLPAPER[\s\S]*?\/\/ END BUNDLED WALLPAPER/;
+if (!pattern.test(source)) throw new Error('Bundled wallpaper markers not found');
+const replacement = '// BEGIN BUNDLED WALLPAPER\n    const BUNDLED_WALLPAPER = ' + JSON.stringify('data:image/jpeg;base64,' + image.toString('base64')) + ';\n    // END BUNDLED WALLPAPER';
+fs.writeFileSync(file, source.replace(pattern, replacement));
+console.log('Embedded bundled wallpaper (' + image.length + ' bytes). Update attribution before release.');
