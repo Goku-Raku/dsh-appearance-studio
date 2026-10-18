@@ -32,12 +32,21 @@ files in this repository.
 
 ## Preview images
 
-The README images are **simulated settings previews**, rendered from the actual
-plugin controls in an isolated React fixture. They are not native Desktop
-captures. Chinese READMEs share the Chinese controls; English and Japanese
-READMEs share the English controls. No private conversation, account token or
-user profile is included. The appearance UI itself currently supports Chinese
-and English, not all four documentation languages.
+The main-interface gallery contains **four actual official Desktop screenshots**
+provided by the author on 2026-10-18. All four READMEs share these English-interface
+captures: light/dark gradient welcome screens and two custom-image conversation
+examples. The image examples demonstrate independent frame/conversation blur
+and transparency (tint strength); they are different configurations, not a
+controlled comparison with every other setting held constant. They show only a
+demonstration greeting, with no account credentials or personal conversation
+content. They provide visual evidence of these configurations, not a full native
+interaction regression test.
+
+The separate settings images remain **simulated previews**, rendered from actual
+plugin controls in an isolated React fixture. Chinese READMEs share the Chinese
+settings previews; English and Japanese READMEs share the English settings
+previews. The appearance UI currently supports Chinese and English, not all four
+documentation languages. See the [image inventory](screenshots/README.md).
 
 ## Boundaries
 
@@ -60,4 +69,4 @@ and English, not all four documentation languages.
 
 简要说明：目标为官方 Windows Desktop 0.2.1-rc.2。90 项界面回归和 5 项默认图片检查通过；
 独立配置的正式安装包安装通过。干净 Desktop 启动到登录页，未复制凭证，也未声称完成空账号的全流程测试。
-README 图片是实际插件控件的模拟预览，非 Desktop 实拍。已知限制与许可边界如上。
+主界面展示采用作者提供的 4 张真实 Desktop 截图；设置预览仍为实际插件控件的模拟渲染。已知限制与许可边界如上。

@@ -6,6 +6,20 @@
 
 **适用对象：Windows 官方 Desktop 0.2.1-rc.2。** 独立浏览器版、macOS、Linux 及其他版本尚未列为支持平台。包中的 `platform: web` 指 Desktop 内嵌的 Web Client API，并非浏览器版产品定位。
 
+## Desktop 主界面实拍
+
+以下为作者提供的官方 Desktop 实际截图，四语 README 共用英文界面图片。画面为演示设置，并非全部默认值。
+
+| 浅色渐变欢迎页 | 深色渐变欢迎页 |
+| --- | --- |
+| ![浅色渐变欢迎页](docs/screenshots/desktop-main-light.png) | ![深色渐变欢迎页](docs/screenshots/desktop-main-dark.png) |
+
+**外框和会话区可以分别调整模糊度与透明程度（底色浓度）。** 下方两张自定义图片示例展示不同的独立设置组合；调整一个区域，不必同时改变另一个区域。外框包括顶部栏和左侧栏。
+
+| 示例 A：外框模糊，会话背景清晰 | 示例 B：外框清晰，会话背景模糊 |
+| --- | --- |
+| ![示例 A：外框模糊，会话背景清晰](docs/screenshots/desktop-chat-image-light.png) | ![示例 B：外框清晰，会话背景模糊](docs/screenshots/desktop-chat-image-dark.png) |
+
 ## 设置界面模拟预览
 
 繁中和简中 README 共用中文设置画面；英文和日文使用英文设置画面。图片由实际插件在隔离的 React 测试界面中渲染，不是原生 Desktop 实拍，也不包含私人对话。插件界面目前提供中文和英文，四语 README 不代表四语界面。

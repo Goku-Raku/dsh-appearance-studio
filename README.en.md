@@ -6,6 +6,20 @@ An unofficial appearance plugin for the official **DeepSeek Harness Desktop** ap
 
 **Target: official Windows Desktop 0.2.1-rc.2.** Standalone browser DSH, macOS, Linux and other versions are not listed as supported. The package’s `platform: web` field identifies the embedded Desktop Web Client API; it is not a browser-product support claim.
 
+## Actual Desktop screenshots
+
+Captured by the author in the official Desktop app. All four READMEs share these English-interface screenshots. They show example configurations, not exclusively default settings.
+
+| Light gradient welcome screen | Dark gradient welcome screen |
+| --- | --- |
+| ![Light gradient welcome screen](docs/screenshots/desktop-main-light.png) | ![Dark gradient welcome screen](docs/screenshots/desktop-main-dark.png) |
+
+**Frame and conversation blur and transparency (tint strength) are independently adjustable.** The two custom-image examples below show different combinations: changing one region does not require changing the other. The frame includes the top bar and left sidebar.
+
+| Example A: blurred frame, sharp conversation background | Example B: sharp frame, blurred conversation background |
+| --- | --- |
+| ![Example A: blurred frame, sharp conversation background](docs/screenshots/desktop-chat-image-light.png) | ![Example B: sharp frame, blurred conversation background](docs/screenshots/desktop-chat-image-dark.png) |
+
 ## Simulated settings previews
 
 The Traditional/Simplified Chinese READMEs share Chinese settings screenshots; the English/Japanese READMEs use English settings screenshots. Rendered by the real plugin in an isolated React fixture; these are simulated previews, not native Desktop captures, and contain no private conversations. The plugin UI currently offers Chinese and English; four README languages do not mean four UI translations.
